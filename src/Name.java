@@ -1,11 +1,12 @@
 class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws NoSuchFieldException {
 
-        Book book = new Book("Толстой Л.Н.", 1869, "Война и мир");
+        //Book book = new Book("Толстой Л.Н.", "Война и мир", 1869);
+        Book book= new Book("Толстой Л.Н.","Война и мир", 1869);
+        System.out.println(book);
         Author author = new Author("Лев", "Толстой");
-        System.out.println(book.authorName+" "+book.bookName+" "+book.yearOfPublication);
-        System.out.println(author.firstName+" "+author.lastName);
+        System.out.println(author);
     }
 }
 
